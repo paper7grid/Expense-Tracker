@@ -37,4 +37,8 @@ def view_expenses():
         reader = csv.reader(file)
         next(reader)
         total = 0
-        
+        print(Fore.LIGHTBLUE_EX+"\nYour Expenses:")
+        for i, row in enumerate(reader, 1):
+            date, category, desc, amount = row
+            print(f"{i}. [{date}] {category} - {desc}: ${amount}")
+
