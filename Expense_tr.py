@@ -19,5 +19,8 @@ if not os.path.exists(FILE_NAME):
         writer.writerow(["Date", "Category", "Description", "Amount"])
 
 def add_expense():
-    date = 
+    date = input(Fore.GREEN + "Enter the date (YYYY-MM-DD): ")
+    category = input(Fore.GREEN + "Enter the category: ")
+    description = input(Fore.GREEN + "Enter the description: ")
+    amount = float(input(Fore.GREEN + "Enter the amount: "))
  
