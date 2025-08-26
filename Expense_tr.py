@@ -41,4 +41,5 @@ def view_expenses():
         for i, row in enumerate(reader, 1):
             date, category, desc, amount = row
             print(f"{i}. [{date}] {category} - {desc}: ${amount}")
+            total += float(amount)
 
