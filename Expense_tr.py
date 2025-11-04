@@ -9,8 +9,8 @@ init(autoreset=True)
 
 #art banner
 banner = pyfiglet.figlet_format("Expense Tracker", font="slant", width=100)
-print(Fore.WHITE + banner)
-print(Fore.BLUE + "Welcome to the Expense Tracker!")
+print(Fore.BLUE + banner)
+print(Fore.WHITE + "Welcome to the Expense Tracker!")
 
 FILE_NAME = "expenses.csv"
 if not os.path.exists(FILE_NAME):
